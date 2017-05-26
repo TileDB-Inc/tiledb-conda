@@ -1,5 +1,6 @@
 package:
   name: tiledb
+  version: dev
 
 source:
   git_rev: dev
