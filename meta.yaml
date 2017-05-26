@@ -7,7 +7,7 @@ source:
 
 requirements:
   build:
-    - cmake
+    - cmake >= 2.8
     - openssl
     - zlib
     - bzip2
