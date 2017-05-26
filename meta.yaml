@@ -1,0 +1,19 @@
+package:
+  name: tiledb
+
+source:
+  #fn: TileDB-0.6.0.tar.gz
+  #url: https://github.com/TileDB-Inc/TileDB/archive/0.6.0.tar.gz
+  #sha1: 1ccec5052ec6139342c63548a38d1b09339e15f7
+  git_rev: errnoheader
+  #git_url: https://github.com/TileDB-Inc/TileDB.git
+  git_url: file:///Users/jacobbolewski/TileDB/TileDB-dev
+
+requirements:
+  build:
+    - cmake
+
+about:
+  home: http://www.tiledb.org
+  license: MIT
+  summary: 'Scientific data management made easy'
