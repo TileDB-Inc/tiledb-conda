@@ -28,4 +28,4 @@ install:
 script:
   # Test that we can build and install the conda package
   - conda build $TRAVIS_BUILD_DIR
-  - conda install $TRAVIS_BUILD_DIR --use-local
+  - conda install -y --use-local tiledb 
