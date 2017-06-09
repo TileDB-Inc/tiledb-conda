@@ -1,5 +1,7 @@
 # tiledb-conda
 
+[![Build Status](https://travis-ci.com/TileDB-Inc/tiledb-conda.svg?token=8cqpFewn7tk2JbU99Cmn&branch=master)](https://travis-ci.com/TileDB-Inc/tiledb-conda)
+
 ### Building the tiledb conda package (Unix)
 
 Build install the `libtiledb` shared library.
