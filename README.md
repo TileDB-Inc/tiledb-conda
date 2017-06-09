@@ -29,12 +29,15 @@ Build install the `libtiledb` shared library.
   `git clone https://github.com/TileDB-Inc/tiledb-conda`
 
 * Add the conda-forge channel
+
   `conda config --add channels conda-forge`
 
 * Build the local conda package
+
   `cd tiledb-conda && conda build .`
 
 * Install the built package locally
+
   `conda install --use-local tiledb`
 
 ### Complete documentation for conda
