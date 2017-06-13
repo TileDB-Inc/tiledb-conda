@@ -26,7 +26,11 @@ requirements:
     - snappy
     - blosc
 
+test:
+  files:
+    - test.cc
+
 about:
   home: http://www.tiledb.org
   license: MIT
-  summary: Scientific data management made easy
+  summary: 'Scientific data management made easy'
