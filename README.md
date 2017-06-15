@@ -40,5 +40,29 @@ Build install the `libtiledb` shared library.
 
   `conda install --use-local tiledb`
 
+### Debugging tiledb-conda recepies with Docker
+
+* Download the anaconda-builder Docker image
+
+`docker pull continuumio/anaconda-build-linux-64`
+
+* Run the Docker image
+
+`docker run -i -t continuumio/anaconda-build-linux-64 /bin/bash`
+
+* Clone the tiledb-conda repo
+
+`git clone https://github.com/TileDB-Inc/tiledb-conda`
+
+* If debugging a pull-request, checkout the pull request
+
+```
+git fetch origin pull/ID/head:BRANCHNAME
+git checkout BRANCHNAME
+```
+
+* Run conda build enabling the conda-forge channel
+
+`conda build -c conda-forge tiledb-conda`
 ### Complete documentation for conda
 [http://conda-test.pydata.org/docs/intro.html](http://conda-test.pydata.org/docs/intro.html)
