@@ -1,3 +1,3 @@
 #!/bin/sh
 g++ test.cc -o test -I${PREFIX}/include -L${PREFIX}/lib -ltiledb -Wl,-rpath,${PREFIX}/lib
-./test
+LD_LIBRARY_PATH=${PREFIX}/lib ./test
