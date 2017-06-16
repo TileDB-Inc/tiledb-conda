@@ -38,7 +38,7 @@ Build install the `libtiledb` shared library.
 
 * Install the built package locally
 
-  `conda install --use-local tiledb`
+  `conda install --use-local tiledb=dev`
 
 ### Debugging tiledb-conda recepies with Docker
 
