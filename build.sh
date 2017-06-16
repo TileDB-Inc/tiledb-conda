@@ -7,5 +7,5 @@ if [ "$(uname)" == "Linux" ]; then
 fi
 mkdir build && cd build
 cmake -DCMAKE_INSTALL_PREFIX=${PREFIX} \
-      -DCMAKE_BUILD_TYPE=Release ..
+      -DCMAKE_BUILD_TYPE=Debug ..
 cmake --build . --target install -- -j${NCPU}
