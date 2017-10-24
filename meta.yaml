@@ -9,7 +9,6 @@ source:
 requirements:
   build:
     - cmake >=2.8
-    - openssl
     - zlib
     - bzip2
     - zstd
@@ -18,15 +17,14 @@ requirements:
     - blosc
 
   run:
-    - openssl
     - zlib
     - bzip2
     - zstd
-    - lz4
     - snappy
+    - lz4-c
     - blosc
 
 about:
-  home: http://www.tiledb.org
+  home: http://www.tiledb.io
   license: MIT
-  summary: Scientific data management made easy
+  summary: Scientific data management made fast and easy
