@@ -3,7 +3,7 @@ if [ "$(uname)" == "Darwin" ]; then
     NCPU=`sysctl -n hw.logicalcpu`
 fi
 if [ "$(uname)" == "Linux" ]; then
-    NCPU=`nproc --all`
+    NCPU=`grep -c ^processor /proc/cpuinfo`
 fi
 mkdir build && cd build
 cmake -DCMAKE_INSTALL_PREFIX=${PREFIX} \
