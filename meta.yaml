@@ -32,6 +32,6 @@ test:
     - test.cc
 
 about:
-  home: http://www.tiledb.org
+  home: http://www.tiledb.io
   license: MIT
   summary: 'Scientific data management made easy'
