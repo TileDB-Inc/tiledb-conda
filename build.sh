@@ -9,4 +9,4 @@ mkdir build && cd build
 cmake -E env CXXFLAGS="-Wno-error=unused-parameter" cmake \
       -DCMAKE_INSTALL_PREFIX=${PREFIX} \
       -DCMAKE_BUILD_TYPE=Release ..
-cmake --build . --target install -- -j1
+cmake --build . --target install -- -j${NCPU}
