@@ -2,7 +2,6 @@ language: python
 sudo: required
 dist: trusty
 python:
-  - "2.7"
   - "3.6"
 install:
   - sudo apt-get update
@@ -28,4 +27,4 @@ install:
 script:
   # Test that we can build and install the conda package
   - conda build $TRAVIS_BUILD_DIR
-  - conda install -y --use-local tiledb 
+  - conda install -y --use-local tiledb
